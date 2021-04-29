@@ -1,0 +1,515 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    --main-background: black;
+    --secondary-background: rgb(255, 247, 236);
+    --yellow-heading: rgb(252, 186, 64);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: var(--secondary-background)
+}
+
+h1 {
+    font-family: 'Crete Round', serif;
+}
+
+.navbar {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-background);
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.navbar div {
+    width: 100%;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu span {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition-duration: 200ms;
+    border-radius: 5px;
+}
+
+.navbar .menu span:hover {
+    background-color: #5F0922;
+}
+
+.navbar .contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .contact a {
+    text-decoration: none;
+}
+
+.contact-button {
+    cursor: pointer;
+    background-color: #5F0922;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.contact-button:hover {
+    background-color: #3a0514;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .logo .logo-image {
+    width: 250px;
+}
+
+.main-body {
+    width: 100%;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.main-body .menu {
+    margin: 10px 0px;
+}
+
+.main-body .menu .menu-header {
+    background-color: var(--main-background);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xxx-large;
+    padding: 20px 0px;
+}
+
+.main-body .menu .menu-header .subtitle {
+    font-size: large;
+    color: var(--yellow-heading);
+}
+
+.main-body .menu .menu-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.main-body .menu .menu-body .menu-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.burgers {
+    width: 100%;
+}
+
+.burgers .burger-header {
+    width: 100%;
+    background-color: var(--main-background);
+    text-align: center;
+    height: 80px;
+}
+
+.burgers .burger-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burgers .burger-items .burger-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.burgers .burger-items .burger-item .item-name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.burgers .burger-items .burger-item .item-description {
+    font-style: italic;
+}
+
+.moved-up-text {
+    font-size: 100px;
+    position: relative;
+    top: -36px;
+    color: var(--yellow-heading);
+    text-shadow:
+     -4px -4px 0 #000,  
+      4px -4px 0 #000,
+      -4px 4px 0 #000,
+       4px 4px 0 #000;
+}
+
+.sides {
+    width: 100%;
+}
+
+.sides .sides-header {
+    margin: 20px 0px;
+    width: 100%;
+    background-color: var(--main-background);
+    text-align: center;
+    color: var(--yellow-heading);
+    font-size: xxx-large;
+}
+
+.sides .sides-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sides .sides-items * {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 3px;
+}
+
+.sides .sides-items .items {
+    font-size: x-large;
+    color: var(--yellow-heading);
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.sides .sides-items .quantities {
+    font-size: large;
+}
+
+.sides .sides-items .prices {
+    font-size: large;
+    font-weight: bold;
+}
+
+.buffalo-wings {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-background);
+    color: white;
+    padding: 10px 20px;
+    margin: 15px 0px;
+}
+
+.buffalo-wings .name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.open-tables-tag {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.open-tables-tag .title {
+    font-size: xxx-large;
+    margin: 0;
+}
+
+.open-tables-tag .tag {
+    font-size: x-large;
+    margin: 0;
+}
+
+.foremost-heading {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.foremost-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.foremost-item .name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.foremost-item .description {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.foremost-item .price {
+    font-size: large;
+    font-weight: bold;
+}
+
+.sandwiches {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sandwiches .sandwich-header {
+    font-size: xxx-large;
+}
+
+.sandwiches .sandwich-item {
+    margin: 10px 0px;
+}
+
+.sandwiches .sandwich-item .name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.sandwiches .sandwich-item .description {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.sides .steak-item {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.sides .steak-description {
+    font-size: small;
+    font-style: italic;
+}
+
+.pizza-item {
+    margin: 10px 0;
+}
+
+.pizza-item .item-name {
+    font-size: xx-large;
+    color: var(--yellow-heading);
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.pizza-item .item-name .item-price {
+    font-size: medium;
+    color: black;
+    text-shadow: none;
+}
+
+.pizza-item .item-description {
+    font-style: italic;
+}
+
+.chicken {
+    margin: 20px;
+}
+
+.chicken .chicken-header {
+    font-weight: bold;
+    font-size: xxx-large;
+    color: var(--yellow-heading);
+    text-shadow:
+    -1.5px -1.5px 0 #000,  
+     1.5px -1.5px 0 #000,
+     -1.5px 1.5px 0 #000,
+      1.5px 1.5px 0 #000;
+}
+.chicken .chicken-quantities {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.chicken .chicken-prices {
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.pizza-deals {
+    width: 100%;
+    margin: 20px;
+}
+
+.pizza-deals .pizza-deals-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: xxx-large;
+    font-weight: lighter;
+}
+
+.pizza-deals .pizza-deals-item {
+    font-size: large;
+    margin: 10px 0px;
+}
+
+.add-ons {
+    margin: 5px;
+    background-color: rgb(255, 210, 159);
+    padding: 20px 10px;
+}
+
+.add-ons .add-ons-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: var(--yellow-heading);
+    text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+      2px 2px 0 #000;
+}
+
+.add-ons .add-ons-item {
+    font-size: large;
+    font-weight: bold;
+}
+
+.drinks {
+    margin: 5px;
+    background-color: rgb(145, 215, 255);
+    padding: 20px 10px;
+}
+
+.drinks .drinks-header {
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.drinks .drinks-item {
+    font-size: large;
+    font-weight: bold;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-crete-round {
+    font-family: 'Crete Round', serif;
+}
+
+.font-kalam {
+    font-family: 'Kalam', cursive;
+}
+
+.font-antonio {
+    font-family: 'Antonio', sans-serif;
+}
+
+.font-girasol {
+    font-family: 'Girassol', cursive;
+}
+
+.font-berkshire-swash {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.font-caveat {
+    font-family: 'Caveat', cursive;
+}
+
+.font-permanent-marker {
+    font-family: 'Permanent Marker', cursive;
+}
+@media (max-width: 1199.98px){
+    .sandwiches .sandwich-header {
+        font-size: xx-large;
+    }
+}
+
+@media (max-width: 991.98px){
+    .sandwiches .sandwich-header {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 767.98px){
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .contact {
+        display: none;
+    }
+
+    .navbar .logo {
+        justify-content: center;
+    }
+    
+    .main-body .menu .menu-body {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .main-body .menu .menu-body .menu-column {
+        width: initial;
+    }
+
+    .burgers .burger-header {
+        height: 40px;
+    }
+
+    .moved-up-text {
+        font-size: xxx-large;
+        top: -18px;
+        text-shadow:
+        -3px -3px 0 #000,  
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+    }
+
+    .open-tables-tag {
+        display: none;
+    }
+}
